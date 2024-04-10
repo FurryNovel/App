@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.furrynovel" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FurryNovel</name>
+    <description>FurryNovel</description>
+    <author email="admin@furrynovel.com" href="https://furrynovel.com">
+        FurryNovel Team
+    </author>
+    <content src="index.html#/zh" />
+    <allow-intent href="https://*.furrynovel.com" />
+    <allow-intent href="https://furrynovel.com" />
+    <allow-intent href="http://*.furrynovel.com" />
+    <allow-intent href="http://furrynovel.com" />
+
+    <preference name="AppendUserAgent" value="FurryNovelApp/1" />
+
+    <chcp>
+        <config-file url="https://5027caf9.ngrok.com/chcp.json"/>
+        <native-interface version="1" />
+    </chcp>
+</widget>

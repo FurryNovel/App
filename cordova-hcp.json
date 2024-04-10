@@ -1,0 +1,7 @@
+{
+  "name": "FurryNovel",
+  "ios_identifier": "id123456789",
+  "android_identifier": "com.furrynovel",
+  "update": "start",
+  "content_url": "https://app-content.furrynovel.com"
+}

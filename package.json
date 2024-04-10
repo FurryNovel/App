@@ -1,0 +1,28 @@
+{
+	"name": "com.furrynovel",
+	"displayName": "FurryNovel",
+	"version": "1.0.0",
+	"description": "FurryNovel",
+	"main": "index.js",
+	"scripts": {
+		"build": "node build.sh"
+	},
+	"keywords": [
+		"ecosystem:cordova"
+	],
+	"author": "Apache Cordova Team",
+	"license": "Apache-2.0",
+	"devDependencies": {
+		"cordova-android": "^12.0.1",
+		"cordova-hot-code-push-plugin-renew": "^1.5.10",
+		"cordova-hot-code-push-cli": "^1.1.1"
+	},
+	"cordova": {
+		"platforms": [
+			"android"
+		],
+		"plugins": {
+			"cordova-hot-code-push-plugin-renew": {}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 rm ./www -rf
 cd src || exit
 git pull
-pnpm install --no-frozen-lockfile
+pnpm install
 pnpm build:client
 mv ./dist/client ./../www
 cd ./../www || exit

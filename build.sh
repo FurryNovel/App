@@ -7,6 +7,6 @@ mv ./dist/client ./../www
 cd ./../www || exit
 sed -i 's/="\//="\.\//g' index.html
 cd ./..
-condova platform add android
-cordova run android
-cordova-hcp build
+npx condova platform add android
+npx cordova run android
+npx cordova-hcp build

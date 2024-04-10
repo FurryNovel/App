@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.furrynovel" version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.furrynovel" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets">
 
-    <name>FurryNovel</name>
-    <description>FurryNovel</description>
-    <author email="admin@furrynovel.com" href="https://furrynovel.com">
-        FurryNovel Team
-    </author>
-    <content src="index.html#/zh" />
     <allow-intent href="https://*.furrynovel.com" />
     <allow-intent href="https://furrynovel.com" />
     <allow-intent href="http://*.furrynovel.com" />
     <allow-intent href="http://furrynovel.com" />
+    <author email="admin@furrynovel.com" href="https://furrynovel.com">
+        FurryNovel Team
+    </author>
+    <chcp>
+        <config-file url="https://app-content.furrynovel.com/chcp.json" />
+        <native-interface version="1" />
+    </chcp>
+    <content src="index.html#/zh" />
+    <description>FurryNovel</description>
+
+    <name>FurryNovel</name>
+
+    <platform name="android">
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge"
+            target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <icon density="hdpi" src="assets/icon.png" />
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="assets/icon_512x512.xml" />
+    </platform>
 
     <preference name="AppendUserAgent" value="FurryNovelApp/1" />
 
-    <chcp>
-        <config-file url="https://app-content.furrynovel.com/chcp.json"/>
-        <native-interface version="1" />
-    </chcp>
-
     <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarBackgroundColor" value="transparent"/>
-
-    <platform name="android">
-        <icon src="assets/icon.png" density="hdpi" />
-        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="assets/icon_512x512.xml" />
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-            <application android:usesCleartextTraffic="true" />
-        </edit-config>
-    </platform>
 </widget>

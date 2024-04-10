@@ -1,6 +1,5 @@
 rm ./www -rf
 cd src || exit
-git pull
 pnpm install
 pnpm build:client
 mv ./dist/client ./../www

@@ -12,9 +12,9 @@
     </author>
     <chcp>
         <config-file url="https://app-content.furrynovel.com/chcp.json" />
-        <native-interface version="1" />
+        <native-interface version="2" />
     </chcp>
-    <content src="index.html#/zh" />
+    <content src="/" />
     <description>FurryNovel</description>
 
     <name>FurryNovel</name>

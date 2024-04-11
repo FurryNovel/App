@@ -26,3 +26,6 @@ node_modules/
 /platforms/
 /package-lock.json
 /.idea/
+/pnpm-lock.yaml
+/www/
+/src/

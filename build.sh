@@ -1,6 +1,7 @@
 rm ./www -rf
+git submodule update --init --recursive
+git submodule update --recursive --remote
 cd src || exit
-git pull
 pnpm install
 pnpm build:client
 mv ./dist/client ./../www

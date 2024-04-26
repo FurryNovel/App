@@ -11,35 +11,36 @@
         FurryNovel Team
     </author>
     <chcp>
+        <auto-download enabled="true" />
+        <auto-install enabled="true" />
         <config-file url="https://app-content.furrynovel.com/chcp.json" />
-        <native-interface version="2" />
+        <native-interface version="1" />
     </chcp>
     <content src="/" />
     <description>FurryNovel</description>
 
     <name>FurryNovel</name>
 
-    <preference name="AppendUserAgent" value="FurryNovelApp/1" />
-
-    <preference name="StatusBarStyle" value="default" />
-    <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarBackgroundColor" value="#ffffff00" />
-
     <platform name="android">
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge"
-                     target="/manifest/application">
-            <application android:usesCleartextTraffic="true" />
-        </edit-config>
-        <icon density="hdpi" src="assets/icon.png" />
-        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="assets/icon_512x512.xml" />
-
-        <preference name="AndroidPostSplashScreenTheme" value="@style/MyCustomTheme"/>
-        <config-file target="res/values/themes.xml" parent="/resources/">
+        <config-file parent="/resources/" target="res/values/themes.xml">
             <style name="MyCustomTheme" parent="Theme.AppCompat.NoActionBar">
                 <item name="android:windowLightStatusBar">true</item>
                 <item name="android:windowTranslucentStatus">true</item>
                 <item name="android:statusBarColor">#002860</item>
             </style>
         </config-file>
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge"
+            target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <icon density="hdpi" src="assets/icon.png" />
+        <preference name="AndroidPostSplashScreenTheme" value="@style/MyCustomTheme" />
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="assets/icon_512x512.xml" />
     </platform>
+
+    <preference name="AppendUserAgent" value="FurryNovelApp/1" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+
+    <preference name="StatusBarBackgroundColor" value="#00ffffff" />
 </widget>
